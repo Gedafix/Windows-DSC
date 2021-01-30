@@ -15,7 +15,7 @@ For most teams, I recommend creating and configuring the following Variables and
 | Variable Name | Example Value | Description |
 |:---------------------|:---------------------|:---------------------|
 | ADMIN_PATH | C:\Admin | This is the folder where you will keep your Binaries or PowerShell scripts used to on-board and install services |
-| BASE_DN	| DC=Core,DC=Guarded,DC=Services|Base Distinguished Name for your environment
+| BASE_DN	| DC=cool-name,DC=net|Base Distinguished Name for your environment
 |API_FOLDER_PATH	|C:\Admin\One-Time-Config\DscMetaConfigs-Live	|This is the folder where the On-boarding script will live. This is where your API key will sit to register against DSC and lets the system know which folder to delete when finished so you don’t expose your API keys after registration.|
 | DOMAIN_NAME	| Cool-Name.Net	| Active Directory FQDN
 
