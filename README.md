@@ -3,11 +3,19 @@ This repo contains a baseline configuration for an Enhanced Security Administrat
 
 The environment assumes you are hosting DSC on the Windows Azure Automation platform and requires Windows Server 2019 as a minumum supported operating system.The environment is Microsoft Windows Server native and assumes an aggressive security posture typically only seen in Bastion or Administrative Forests. 
 
-This environment supports the following advanced Windows features: 
-| Passwordless Single-Sign On | RDMA Capable Software Defined Storage |
+This environment supports the following advanced Windows features:
+| | | | |
+|:---------------------|----------------------|----------------------|----------------------|
+| Feature | Feature | Feature | Feature |
+| Feature | Feature | Feature | Feature | 
+| Feature | Feature | Feature | Feature |
 
 This environment requires familiarity in the following services:
-
+| | | | |
+|:---------------------|----------------------|----------------------|----------------------|
+| Feature | Feature | Feature | Feature |
+| Feature | Feature | Feature | Feature |
+| Feature | Feature | Feature | Feature |
 
 ## WHAT IS AZURE AUTOMATION?
 Azure Automation is a offering which delivers a cloud-based automation and configuration service that provides consistent management across your Azure and non-Azure environments. It consists of process automation, update management, and configuration features. Azure Automation provides complete control during deployment, operations, and decommissioning of workloads and resources.  
