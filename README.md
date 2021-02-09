@@ -8,7 +8,7 @@ This environment supports all of the following advanced Windows features:
 |:---------------------|----------------------|----------------------|----------------------|
 | Passwordless Single-Sign On | Azure AD Internet SSO | Azure Conditional Access | Cloud Managed Configuration Management |
 | Remote Desktop SSO | Virtual TPM Smartcards | Hyperconverged Infrastructure |  Software Defined Storage |
-| Windows Infrastructure as Code | Declarative Configuration Management | CI/CD Pipeline Deployment  | It's cool as shit |
+| Windows Infrastructure as Code | Declarative Configuration Management | CI/CD Pipeline Deployment  | Modern Group Policy Baselines |
 
 ## WHAT IS AZURE AUTOMATION?
 Azure Automation is a offering which delivers a cloud-based automation and configuration service that provides consistent management across your Azure and non-Azure environments. It consists of process automation, update management, and configuration features. Azure Automation provides complete control during deployment, operations, and decommissioning of workloads and resources.  
