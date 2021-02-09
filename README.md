@@ -1,4 +1,4 @@
-## WHAT DOES IS THIS REPOSITORY USED FOR?
+## WHAT IS THIS REPOSITORY USED FOR?
 This repo contains a baseline configuration for an Enhanced Security Administrative environment presented in an Infrastructure-As-Code format. This Repository utilizes the built-in Configuration Management capabilities native to Windows called PowerShell Desired State Configuration. The README.md below assumes you are hosting DSC on the Windows Azure Automation platform and requires Windows Server 2019 as a minumum supported operating system.
 
 This environment is Microsoft Windows Server native and assumes an aggressive security posture typically only seen in Bastion or Administrative Forests. 
