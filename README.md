@@ -1,21 +1,14 @@
 ## WHAT IS THIS REPOSITORY USED FOR?
-This repo contains a baseline configuration for an Enhanced Security Administrative environment presented in an Infrastructure-As-Code format. This Repository utilizes the built-in Configuration Management capabilities native to Windows called PowerShell Desired State Configuration. 
+This repo contains a baseline configuration for an Enhanced Security Administrative Forest presented in an Infrastructure-As-Code format. This Repository utilizes the built-in Configuration Management capabilities native to Windows called PowerShell Desired State Configuration. 
 
-The environment assumes you are hosting DSC on the Windows Azure Automation platform and requires Windows Server 2019 as a minumum supported operating system.The environment is Microsoft Windows Server native and assumes an aggressive security posture typically only seen in Bastion or Administrative Forests. 
+The environment assumes you are hosting DSC on the Windows Azure Automation platform and requires Windows Server 2019 as a minumum supported operating system. The environment is Microsoft Windows Server native and assumes an aggressive security posture typically only seen in Bastion or Administrative Environments. Extensive use of Reverse Proxy agents limit required ingress firewall needs to DNS Forwarding only.
 
-This environment supports the following advanced Windows features:
+This environment supports all of the following advanced Windows features:
 | | | | |
 |:---------------------|----------------------|----------------------|----------------------|
-| Feature | Feature | Feature | Feature |
-| Feature | Feature | Feature | Feature | 
-| Feature | Feature | Feature | Feature |
-
-This environment requires familiarity in the following services:
-| | | | |
-|:---------------------|----------------------|----------------------|----------------------|
-| Feature | Feature | Feature | Feature |
-| Feature | Feature | Feature | Feature |
-| Feature | Feature | Feature | Feature |
+| Passwordless Single-Sign On | Azure AD SSO | Azure Conditional Access | Cloud Managed Configurations Management |
+| Remote Desktop SSO | Virtual TPM Smartcards | Hyperconverged Infrastructure |  Software Defined Storage |
+| Windows Infrastructure as Code | Declarative Configuration Management | CI/CD Pipeline Deployment  | It's cool to talk about! |
 
 ## WHAT IS AZURE AUTOMATION?
 Azure Automation is a offering which delivers a cloud-based automation and configuration service that provides consistent management across your Azure and non-Azure environments. It consists of process automation, update management, and configuration features. Azure Automation provides complete control during deployment, operations, and decommissioning of workloads and resources.  
