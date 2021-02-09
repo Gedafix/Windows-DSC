@@ -1,14 +1,14 @@
-## WHAT IS THIS REPOSITORY?
+## WHAT IS THIS CODE REPOSITORY?
 This repo contains a baseline configuration for an Enhanced Security Administrative Forest presented in an Infrastructure-As-Code format. This Repository utilizes the built-in Configuration Management capabilities native to Windows called PowerShell Desired State Configuration. 
 
-The environment assumes you are hosting DSC on the Windows Azure Automation platform and requires Windows Server 2019 as a minumum supported operating system. The environment is Microsoft Windows Server native and assumes an aggressive security posture typically only seen in Bastion or Administrative Environments. Extensive use of Reverse Proxy agents limit required ingress firewall needs to DNS Forwarding only.
+The environment assumes you are hosting DSC on the Windows Azure Automation platform and requires Windows Server 2019 as a minumum supported operating system. The environment is Microsoft Windows Server native and assumes an aggressive security posture typically only seen in Bastion or Administrative Environments. Extensive use of Reverse Proxy agents limit required ingress firewall to DNS Forwarding.
 
 This environment supports all of the following advanced Windows features:
 | | | | |
 |:---------------------|----------------------|----------------------|----------------------|
-| Passwordless Single-Sign On | Azure AD Internet SSO | Azure Conditional Access | Cloud Managed Configurations Management |
+| Passwordless Single-Sign On | Azure AD Internet SSO | Azure Conditional Access | Cloud Managed Configuration Management |
 | Remote Desktop SSO | Virtual TPM Smartcards | Hyperconverged Infrastructure |  Software Defined Storage |
-| Windows Infrastructure as Code | Declarative Configuration Management | CI/CD Pipeline Deployment  | It's cool to talk about! |
+| Windows Infrastructure as Code | Declarative Configuration Management | CI/CD Pipeline Deployment  | It's cool as shit |
 
 ## WHAT IS AZURE AUTOMATION?
 Azure Automation is a offering which delivers a cloud-based automation and configuration service that provides consistent management across your Azure and non-Azure environments. It consists of process automation, update management, and configuration features. Azure Automation provides complete control during deployment, operations, and decommissioning of workloads and resources.  
@@ -38,3 +38,6 @@ For most teams, I recommend creating and configuring the following Variables and
 |DOMAIN_CONTROLLER_JOIN	|DOMAIN\DC-Domain-Join *PASSWORD*	|Domain Admin account used to promote new domain controllers. This account should be removed from the Domain Admins group when not in use. Change Control should be followed to ensure this account only has permission when required.
 |DOMAIN_JOIN	|DOMAIN\AD-Domain-Join *PASSWORD*	|Default credential with rights to join machines to the domain. The Sanctuary Team recommends this account only have rights to create objects in a specific OU.
 |TEMP_PASSWORD |Not Used *PASSWORD*	|Generic Variable used for processes that require a full PS Credential object, but don’t use the password itself. A good example of this is a gMSA Object.
+
+### WHERE DO I GO FOR MORE INFORMATION OR IF I'M STUCK?
+If you would like to geek out over the repo contained above please reach out to me on my linked-in at /michael-m-freeman/. 
