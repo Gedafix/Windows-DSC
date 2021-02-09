@@ -1,7 +1,7 @@
 ## WHAT IS THIS CODE REPOSITORY?
 This repo contains a baseline configuration for an Enhanced Security Administrative Forest presented in an Infrastructure-As-Code format. This Repository utilizes the built-in Configuration Management capabilities native to Windows called PowerShell Desired State Configuration. 
 
-The environment assumes you are hosting DSC on the Windows Azure Automation platform and requires Windows Server 2019 as a minimum supported operating system. The environment is Microsoft Windows Server native and assumes an aggressive security posture typically only seen in Bastion or Administrative Environments. Extensive use of Reverse Proxy agents limit required ingress firewall to DNS Forwarding.
+The environment assumes you are hosting DSC on the Windows Azure Automation platform and requires Windows Server 2019 as a minimum supported operating system. The environment is Microsoft Windows Server native and assumes an aggressive security posture typically only seen in Bastion or Administrative Environments. Extensive use of Reverse Proxy agents limit required ingress firewall to DNS Forwarding. The code also contains a baseline for a Host Guardian Service as this environment is intended to be hosted on Windows Shielded Virtual Machines in a trusted Guarded Fabric. I've also included some baseline configurations for Hypervisor-Protected Code Integrity (HVCI) but it is likely unnecessary for most organizations.
 
 This environment supports all the following advanced Windows features:
 | | | | |
