@@ -4,7 +4,7 @@ Configuration ActiveDirectoryBuild{
     
     #Once Active Directory has been built, you need to add the Root Certificate to the PKI Trust Store in Active Directory
         #Failure to do this will cause the Root CA to be cleared on every machine that joins the Active Directory Domain
-        #This will cause severe DSC Complications as the machine will lose connectivity to Azure mid-deploy, this only needs to be performed once per forest
+        #This will cause significant DSC Complications as the machine will lose connectivity to Azure mid-deploy, this only needs to be performed once per forest
         #This step is not necessary if your organization does not TLS Decrypt your proxy traffic (shame shame!)
         
         #CertUtil.exe -dspublish -f FILENAME RootCA
@@ -137,16 +137,16 @@ Configuration ActiveDirectoryBuild{
                 DependsOn = '[ADDomain]ForestBuild'
             }
 
-            #Builds the AD Replication Site for Primary Datacenter
-            ADReplicationSite cool-name-LAS1{
-                Name = 'cool-name-LAS1'
+            #Builds the AD Replication Site for Secondary Datacenter
+            ADReplicationSite cool-name-LAS{
+                Name = 'cool-name-LAS'
                 Ensure = 'Present'
                 DependsOn = '[ADDomain]ForestBuild'
             }
 
-            #Builds the AD Replication Site for Site Servers
-            ADReplicationSite cool-name-IRV{
-                Name = 'cool-name-IRV'
+            #Builds the AD Replication Site-for-Site Servers
+            ADReplicationSite cool-name-ORG{
+                Name = 'cool-name-ORG'
                 Ensure = 'Present'
                 DependsOn = '[ADDomain]ForestBuild'
             }
