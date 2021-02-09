@@ -40,7 +40,7 @@ For most teams, I recommend creating and configuring the following Variables and
 |TEMP_PASSWORD |Not Used *PASSWORD*	|Generic Variable used for processes that require a full PS Credential object, but do not use the password itself. A good example of this is a gMSA Object that has no password.
 
 ### WHAT ARE SOME PITFALLS TO WATCH OUT FOR?
-While Desired State Configuration is a very mature technology, the DSC Resource modules included above change FREQUENTLY. This means that the systems, spelling, functions, and routines contained within the modules are subject to change at will unless you pin the module version in your code. As always, reference code is not production ready, and if you deploy this configuration as-is you are an idiot.
+While Desired State Configuration is a very mature technology, the DSC Resource modules included above change FREQUENTLY. This means that the systems, spelling, functions, and routines contained within the modules are subject to change unless you pin the module version in your code. As always, reference code is not production ready, and if you deploy this configuration as-is you are an idiot.
 
 ### WHERE DO I GO FOR MORE INFORMATION OR IF I'M STUCK?
 If you would like to geek out over the repo contained above, please reach out to me on my linked-in at /michael-m-freeman/. 
