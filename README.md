@@ -36,7 +36,7 @@ For most teams, I recommend creating and configuring the following Variables and
 |:---------------------|:---------------------|:---------------------|
 |DEFAULT_DC_CRED	|ADMINISTATOR *PASSWORD*	|Default Credential used to Build a new Forest; a password manager should manage this password once the Forest exists. Do not change this value once set as it is used in disaster recovery procedures. This is only required for Net-New Forest scenarios.
 |DOMAIN_CONTROLLER_JOIN	|DOMAIN\DC-Domain-Join *PASSWORD*	|Domain Admin account used to promote new domain controllers. This account should be removed from the Domain Admins group when not in use. Change Control should be followed to ensure this account only has permission when required.
-|DOMAIN_JOIN	|DOMAIN\AD-Domain-Join *PASSWORD*	|Default credential with rights to join machines to the domain. The Sanctuary Team recommends this account only have rights to create objects in a specific OU.
+|DOMAIN_JOIN	|DOMAIN\AD-Domain-Join *PASSWORD*	|Default credential with rights to join machines to the domain. I recommend this account only have rights to create objects in a specific OU.
 |TEMP_PASSWORD |Not Used *PASSWORD*	|Generic Variable used for processes that require a full PS Credential object, but do not use the password itself. A good example of this is a gMSA Object that has no password.
 
 ### WHAT ARE SOME PITFALLS TO WATCH OUT FOR?
